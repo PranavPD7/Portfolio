@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<!--/ /---- Put your name in the title of the page ----/ /-->
+	<title>Pranav Prashant Dambal</title>
+	
+	<!--/ /-------- Normalize CSS --------/ /-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+	
+	<!--/ /-------- Google Fonts --------/ /-->
+	<!-- Add a link to google fonts here if you want them -->
+	
+	<!--/ /-------- Font Awesome --------/ /-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	<!--/ /-------- Your Styles --------/ /-->
+	<link href="styles.css" rel="stylesheet">
+
+	<!--/ /---Put a short description for your site below. 20 words or less---/ /-->
+	<meta description="Welcome to my portfolio website. Check out few of my crafty projects, will be coming up with some more soon">
+
+	<!--/ /-------- Needed For Mobile Devices --------/ /-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+	
+    <!-- ------------------------------------------------------
+    The site is designed to be mobile first. The wrapper elements
+	are in place for when you get to desktop size to contain the 
+	content.
+    ------------------------------------------------------- -->
+    
+	<header class="primary">
+        <div class="wrapper">
+            
+			<div class="logo-container">
+				<h1>Pranav<br>Prashant Dambal's<br>Portfolio</h1>
+
+				<!-- ------------------------------------------------------
+				Note that the image of the logo is linked to the home page.
+				------------------------------------------------------- -->
+				<a href="index.html"><img src="https://t3.ftcdn.net/jpg/05/03/08/02/360_F_503080278_l7JRkR6TLVrw5KUF5Q4dH2DlbUaGC8ll.jpg" alt="logo image" id="logo"></a>
+			</div>
+            
+            
+			<!-- ------------------------------------------------------
+            The navigation here is linking to the sections further down
+            the page.
+            ------------------------------------------------------- -->
+			<nav id="mainnav">
+            	<ul>
+                	<li><a href="#work">Work</a></li>
+                    <li><a href="#about-contact">About</a></li>
+                    <li><a href="#about-contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+        
+    </header>
+    
+    <!-- ------------------------------------------------------
+    This is the work section, which has two parts: the featured
+	section and the projects section.
+    ------------------------------------------------------- -->
+    
+    <section id="work">
+   		<div class="wrapper">
+        	<h2>Check Out My Best Projects</h2>
+        	<section class="featured">
+                <article>
+                	<!-- ------------------------------------------------------
+                    Link the image below to the detail page for this project.
+                    Use the page.html file to make that page. Also link the 
+                    anchor tag in the paragraph below to the same page.
+                    ------------------------------------------------------- -->
+                	<a href="#"><img src="C:\Users\HP\Downloads\cloudcompute\portfolio-template\mental_health.jpg" alt="image"></a>
+                </article>
+                
+                <article>
+                	<h3>Mental-Health Chatbot</h3>
+                    <h4>Challenge Statement</h4>
+                    <p>We built a health-care chatbot in a hackathon conducted at PES using large language model LLM and integrated it successfully with our website. This chatbot is used for detecting mental health issues and providing useful insights for curing the illness.The chatbot provides user specific suggestions and medications based on the symptoms provided by the user.It provides a decent context window for building conversation with the user so as to learn about the patient better. We used react for building the user interface and chat window. MongoDB was used for database management. Integrating AI with the website was done using flask. My role in this 4 -membered team was to build the LLM . I finetuned the llama v2 model. and used a suitable dataset available in Hugging-Face website for training the model./a></p> 
+                </article>
+            </section> <!-- end row -->
+            
+            
+            <!-- ------------------------------------------------------
+            The projects section is for additional projects. I put four in
+			here, but it could be more, or less. You just have to pay
+			attention to how they wrap, and how many you want per row.
+            
+            Note that each image should be linked to the page with more
+            detailed information about that project. You can use a copy of
+            page.html to create those pages.
+            ------------------------------------------------------- -->
+            
+            <section class="projects">
+            
+            	<article>
+                	<h3>Movie Recommendation System</h3>
+                	<a href="#"><img src="C:\Users\HP\Downloads\cloudcompute\portfolio-template\movie_recommendation.jpg" alt="image"></a>
+                    <p><strong>Role:</strong> AI analyst</p>
+                    <p><strong>Description:</strong>An advanced recommender system for recommending movies. It was trained on the Netflix dataset.
+						I created a simple stacked autoencoder to build the model. based on the concept of encoding and decoding. Once trained,It can predict the ratings any user would provide for any movie on a scale of 1 to 5 star ratings. It is user specific and the ratings it predicts for each movie varies from user to user. The user simply provides ratings for a few movies he has watched and the model can predict accurately the ratings for the unwatched movies. with an M.S.E loss<1 star for its predicted ratings.</p>
+                </article>
+                
+                <article>
+                	<h3>Multiple Disease Prediction App</h3>
+                	<a href="#"><img src="C:\Users\HP\Downloads\cloudcompute\portfolio-template\disease_prediction.jpg" alt="image"></a>
+                    <p><strong>Role:</strong> AI Engineer</p>
+                    <p><strong>Description:</strong>  Developed a multiple disease prediction web application integrated with finetuned llamav2 model , with gradio
+						serving as API and streamlit as the frontend
+						∗ Implemented QA based disease prediction for parkinsons,diabetes and heart attack diseases using logistic
+						regression,support vector machine models
+						∗ Brain tumour detection detection using CNN model which takes jpg/png/zip image of MRI brain scan and
+						detects the type of tumour if present</p>
+                </article>
+                
+                <article>
+                	<h3> Reinforcement learning optimization for classic Arcade games</h3>
+                	<a href="#"><img src="C:\Users\HP\Downloads\cloudcompute\portfolio-template\arcade.jpg" alt="image"></a>
+                    <p><strong>Role:</strong> AI analyst</p>
+                    <p><strong>Description:</strong> ∗ Used gymnasium for setting the observation space and environment for the game.
+						∗ Used deep convolutional q learning technique to train AI model to play the classic game of Atlantis.
+						∗ Used asynchronous learning(A3C) algorithm to train AI model to play the bank heist game.</p>
+                </article>
+				
+				<article>
+                	<h3>
+						Fraud transaction detection</h3>
+                	<a href="#"><img src="C:\Users\HP\Downloads\cloudcompute\portfolio-template\fraud_detection.jpg" alt="image"></a>
+                    <p><strong>Role:</strong> Data analyst</p>
+                    <p><strong>Description:</strong> This is a hybrid deep learning model using both supervised and unsupervised learning branches for detecting the fraudulent transactions from any given set of transactions. I tested it on a cryptocurrency transaction dataset.For the unsupervised learning part I used self organizing map to detect the clusters of transactions. By setting a threshold value the outlying clusters detected were the ones suspected to be fraudulent. Then using this data a dependent variable was then created which could be used to train a simple artificial neural network the supervised learning branch. This predicted a list of customers involved in the fraudulent transactions and their associated probability of involvement in frauds. It was able to produce results of accuracy upto 95 percent.</p>
+                </article>
+            
+            </section><!-- end row -->
+            
+        </div> <!-- end work wrapper -->
+    </section>
+    
+    
+    <!-- ------------------------------------------------------
+    This is the about and contact section. The links in the main
+    navigation link to this section. 
+    ------------------------------------------------------- -->
+    
+    <section id="about-contact" class="secondary">
+   		<div class="wrapper">
+        	
+			<div class="profile-photo">
+            	<img src="http://placehold.it/260?text=Your+Photo" alt="image">
+            </div>
+			
+            <article>
+				<h2>About Me</h2>
+				<p>BTECH, 3rd year at PES persuing Computer Science.</p>
+				<h3>Skills</h3>
+				<p>I am particularly good at AI engineering and data analytics . I'm very exited about Machine Learning.</p>
+			</article> 
+                
+			<article>
+				<h2>Contact Me!</h2>
+				<p>I am currently looking for opportunities to work on a team as ai analyst. Please feel free to contact me by phone, email or through the usual social media channels.</p>
+
+				<!-- ------------------------------------------------------
+				Be sure to encode your email address at this site, so you 
+				don't get spam. http://wbwip.com/wbw/emailencoder.html
+				------------------------------------------------------- -->
+
+				<p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:&#101;&#109;&#097;&#105;&#108;&#064;&#115;&#111;&#109;&#101;&#119;&#104;&#101;&#114;&#101;&#046;&#099;&#111;&#109;">&#101;&#109;&#097;&#105;&#108;&#064;&#115;&#111;&#109;&#101;&#119;&#104;&#101;&#114;&#101;&#046;&#099;&#111;&#109;</a><br>
+				<i class="fa fa-phone" aria-hidden="true"></i> 123-456-7890</p>
+
+				<!-- ------------------------------------------------------
+				You can see here that I have included font-awesome. It is used
+				to create the icons above and below. You can go to the font-awesome
+				website to see the available icons and swap some out.
+				------------------------------------------------------- -->
+
+				<p class="social">
+					<a href="#"><i class="fab fa-facebook"></i></a>
+					<a href="#"><i class="fab fa-linkedin"></i></a> 
+					<a href="#"><i class="fab fa-twitter-square"></i></a>
+				</p>
+			</article>
+                   
+        </div>
+    </section>
+    
+    
+    <!-- ------------------------------------------------------
+    The footer section is not doing much on this page. Add more
+    content if necessary.
+    ------------------------------------------------------- -->
+    <footer class="primary">
+    	<div class="wrapper">
+        	<p class="centered">&copy; 2019 all rights reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>
