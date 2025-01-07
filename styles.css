@@ -1,0 +1,229 @@
+/*********** Colors ***********
+primary = #2E3A59;
+secondary = #F4F5FA;
+accent = #FF6F61;
+text default = #222831;
+********************************/
+
+/************* Basic Page Rules ************/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #222831;
+    background: #F4F5FA;
+    margin: 0;
+}
+
+/************* Typography ************/
+
+h1, h2, h3, h4, nav {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #FF6F61;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 0.8em;
+    color: #2E3A59;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.6em;
+    margin-bottom: 0.5em;
+    color: #2E3A59;
+}
+
+h4 {
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+    color: #2E3A59;
+}
+
+p {
+    line-height: 1.6em;
+    margin-bottom: 1em;
+    color: #222831;
+}
+
+a {
+    color: #FF6F61;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.social {
+    font-size: 1.75em;
+}
+
+.centered {
+    text-align: center;
+}
+
+/****************** Grid ******************/
+
+.primary {
+    background: #2E3A59;
+}
+
+.secondary {
+    background: #F4F5FA;
+}
+
+/****************** Header and Main Navigation ****************/
+
+header {
+    padding: 30px;
+    background-color: #2E3A59;
+    color: #F4F5FA;
+    text-align: center;
+}
+
+header .wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+#mainnav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#mainnav ul li a {
+    display: block;
+    color: #FF6F61;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+#mainnav ul li a:hover {
+    color: #FFFFFF;
+    background-color: #FF6F61;
+    border-radius: 5px;
+}
+
+/***************** Section Specific Rules *****************/
+
+#work {
+    background: #FFFFFF;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#work img, .additional-projects img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.featured, .projects {
+    margin-bottom: 40px;
+}
+
+.projects article {
+    margin-bottom: 20px;
+}
+
+#about-contact, .additional-projects {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#about-contact img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 3px solid #FF6F61;
+}
+
+footer {
+    padding: 20px;
+    background-color: #2E3A59;
+    color: #F4F5FA;
+    text-align: center;
+}
+
+/*********** Media Queries ***********/
+
+@media only screen and (min-width: 650px) {
+    #work {
+        padding: 40px 20px;
+    }
+
+    .projects, .featured {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .projects article, .featured article {
+        width: 48%;
+    }
+
+    #about-contact .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    #about-contact img {
+        width: 180px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .featured {
+        display: flex;
+    }
+
+    .featured article {
+        flex: 1;
+    }
+
+    .additional-projects article {
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 1040px) {
+    .wrapper {
+        width: 1020px;
+        margin: auto;
+    }
+
+    .projects article {
+        width: 22%;
+    }
+}
